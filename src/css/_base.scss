@@ -1,0 +1,58 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Raleway');
+
+// ------------ Mixins ------------ 
+
+// Linear gradient
+@mixin gradient($from, $to) {
+    /* fallback/image non-cover color */
+    background-color: $from;
+
+    /* Firefox 3.6+ */
+    background-image: -moz-linear-gradient($from, $to);
+
+    /* Safari 4+, Chrome 1+ */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background-image: -webkit-linear-gradient($from, $to);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient($from, $to);
+}
+
+// Transition
+@mixin transition($duration) {
+    -webkit-transition: $duration ease-in-out;
+    -moz-transition: $duration ease-in-out;
+    -ms-transition: $duration ease-in-out;
+    -o-transition: $duration ease-in-out;
+    transition: $duration ease-in-out;
+}
+
+// Image container
+@mixin image-container($max-width, $max-height) {
+    max-width: $max-width;
+    max-height: $max-height;
+}
+
+// ------------ Variables ------------
+
+// Colors
+$primary-dark: #AA7917;
+$primary-light: #F2B42A;
+$primary-font-color: #FFFFFF;
+
+// Fonts
+$primary-font: 'Raleway',
+sans-serif;
+$secondary-font: 'PT Serif',
+serif;
+// App
+$app-background: linear-gradient(#0D000E, #200228);
+
+
+// ------ Components ------
+
+// Button
+$default-transition-duration: .35s;

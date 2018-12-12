@@ -1,0 +1,76 @@
+@import './_base.scss';
+
+// ------------ Utility ------------
+.pl-med {
+    padding-left: 3em;
+}
+
+.pl-lg {
+    padding-left: 6em;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+// ------------ Text ------------
+h1 {
+    font-family: $secondary-font;
+    color: $primary-font-color;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+p {
+    font-family: $primary-font;
+    color: $primary-font-color;
+    font-size: 1em;
+    font-weight: normal;
+    max-width: 70%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+//  ------------ Page Elements ------------
+
+// Button
+.btn {
+    @include transition($default-transition-duration);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #FFFFFF;
+    font-family: raleway;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 16px 28px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid #FFFFFF 2px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px 0px;
+
+    &:hover {
+        @include transition($default-transition-duration);
+        background: #FFFFFF;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+// Rule
+.rule {
+    stroke: $primary-dark;
+    stroke-width: 2;
+}
+
+section {
+    min-height: 100vh;
+}

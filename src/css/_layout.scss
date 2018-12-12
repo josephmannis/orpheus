@@ -1,0 +1,52 @@
+@import './_base.scss';
+
+body {
+    margin: 0px;
+}
+
+#app {
+    background-image: $app-background;
+    padding: 0px;
+    margin: 0px;
+}
+
+// ------------ Header ------------
+
+.header {
+    padding: 20px 0px;
+    // position: fixed;
+    // top: 0;
+    // width: 100%
+}
+
+// Header Link
+.header-link {
+    @include transition($default-transition-duration);
+
+    font-size: 1em;
+    color: $primary-font-color;
+    font-family: $primary-font;
+    margin: 0px 60px;
+
+    &:hover {
+        @include transition($default-transition-duration);
+        font-weight: bold;
+        color: $primary-dark;
+    }
+}
+
+// Logo
+.logo {
+    @include image-container(50px, 50px);
+}
+
+// ------------ Landing ------------
+.hand {
+    min-width: 50%;
+}
+
+// ------------ About ------------
+.phone {
+    padding-left: 15%;
+    min-width: 125%;
+}
