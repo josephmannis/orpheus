@@ -1,11 +1,11 @@
 <template>
-  <section class="row section center-lg middle-lg">
+  <section class="row section center-lg middle-lg" id="about">
     <div class="col-lg-6 start-lg">
       <div class="pl-lg">
         <h1 class="m-0">A person is their data.</h1>
         <h1 class="mt-0 italic">Let's use that.</h1>
         <DividerLine/>
-        <p>
+        <p class="text-col-std">
           orpheus develops the most advanced neural networks
           on the market. with help from one of our expert data specialists, we can create a near perfect replica of their personality that you can interact with - as if they were never gone.
         </p>

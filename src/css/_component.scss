@@ -9,6 +9,14 @@
     padding-left: 6em;
 }
 
+.py-med {
+    padding: 3em 0px 3em 0px;
+}
+
+.py-lg {
+    padding: 6em 0px 6em 0px;
+}
+
 .m-0 {
     margin: 0px;
 }
@@ -21,8 +29,8 @@
 h1 {
     font-family: $secondary-font;
     color: $primary-font-color;
-    font-size: 3em;
-    font-weight: normal;
+    font-size: 2.5em;
+    font-weight: lighter;
 }
 
 p {
@@ -30,12 +38,36 @@ p {
     color: $primary-font-color;
     font-size: 1em;
     font-weight: normal;
-    max-width: 70%;
 }
 
 .italic {
     font-style: italic;
 }
+
+.bold {
+    font-weight: bolder;
+}
+
+.color-primary {
+    color: $primary-light;
+}
+
+.color-secondary {
+    color: white;
+}
+
+.font-primary {
+    font-family: $primary-font;
+}
+
+.font-secondary {
+    font-family: $secondary-font;
+}
+
+.text-col-std {
+    max-width: 60%;
+}
+
 
 //  ------------ Page Elements ------------
 

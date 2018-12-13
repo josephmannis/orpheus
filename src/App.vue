@@ -3,6 +3,8 @@
     <Header/>
     <LandingSection/>
     <AboutSection/>
+    <ServiceSection/>
+    <ReviewSection/>
   </div>
 </template>
 
@@ -10,13 +12,17 @@
 import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import AboutSection from "./components/AboutSection";
+import ServiceSection from "./components/ServiceSection";
+import ReviewSection from "./components/ReviewSection";
 
 export default {
   name: "app",
   components: {
     Header,
     LandingSection,
-    AboutSection
+    AboutSection,
+    ServiceSection,
+    ReviewSection
   }
 };
 </script>

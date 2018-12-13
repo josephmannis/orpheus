@@ -14,15 +14,17 @@ body {
 
 .header {
     padding: 20px 0px;
-    // position: fixed;
-    // top: 0;
-    // width: 100%
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
 }
 
 // Header Link
 .header-link {
     @include transition($default-transition-duration);
-
+    background: none;
+    border: none;
     font-size: 1em;
     color: $primary-font-color;
     font-family: $primary-font;
@@ -33,6 +35,24 @@ body {
         font-weight: bold;
         color: $primary-dark;
     }
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
 }
 
 // Logo
@@ -49,4 +69,40 @@ body {
 .phone {
     padding-left: 15%;
     min-width: 125%;
+}
+
+// ------------ Services ------------
+.package {
+    border: .5px solid white;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.package-content {
+    padding: 20%;
+}
+
+.package-image {
+    max-width: 75%;
+}
+
+// ------------ Reviews ------------
+
+.review {
+    border: 1px solid $primary-dark;
+}
+
+.profile-icon-left {
+    position: relative;
+    right: 75%;
+    min-width: 150%;
+}
+
+.profile-icon-right {
+    position: relative;
+    left: 25%;
+    min-width: 150%;
 }
